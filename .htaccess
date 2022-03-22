@@ -1,0 +1,4 @@
+RewriteEngine On
+
+RewriteRule ^board/([a-zA-Z_]+)$ index.php?req=list&b=$1 [L]
+RewriteRule ^board/([a-zA-Z_]+)/([1-9][0-9]*)$ index.php?req=read&b=$1&n=$2 [L]
